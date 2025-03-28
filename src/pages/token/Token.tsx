@@ -942,10 +942,10 @@ export const TokenPage = (): JSX.Element => {
               </p>
               <div className='flex flex-col gap-2'>
                 {tokenInfo?.crownDate ? (
-                  <p className='text-base text-[#ffff00] font-medium'>Crowned king of the hill on {tokenInfo?.crownDate?.toLocaleDateString()}</p>
+                  <p className='text-base text-[#ffff00] font-medium'>Crowned Moon Ruler on {tokenInfo?.crownDate?.toLocaleDateString()}</p>
                 ) : (
                   <>
-                    <p className='text-sm text-white font-medium'>king of the hill progress: {tokenInfo?.kingOfTheHillProgress.toFixed(1)}%</p>
+                    <p className='text-sm text-white font-medium'>Moon Ruler Progress: {tokenInfo?.kingOfTheHillProgress.toFixed(1)}%</p>
                     {/* <Progress progress={tokenInfo!.kingOfTheHillProgress} size="sm" color="white" theme={ProgressTheme} /> */}
                     <ProgressBar value={tokenInfo?.kingOfTheHillProgress} className="h-2" />
                     <p className='text-xs font-medium text-[#808080]'>
@@ -954,7 +954,7 @@ export const TokenPage = (): JSX.Element => {
                   </>
                 )}
               </div>
-              {/* <div className='text-base font-bold text-white border-b border-dotted border-[#282828] w-fit'>Crowned king of the hill on 17:19:57 15/05/2024</div> */}
+              {/* <div className='text-base font-bold text-white border-b border-dotted border-[#282828] w-fit'>Crowned Moon Ruler on 17:19:57 15/05/2024</div> */}
               <div className='flex flex-col gap-3'>
                 <p className='text-base font-semibold text-white'>Holder distribution</p>
                 <div className='flex flex-col gap-2 text-sm text-white/[.80]'>
